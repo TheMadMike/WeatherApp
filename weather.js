@@ -1,5 +1,4 @@
 const cityNameInput = document.getElementById('cityName');
-const currentWeatherCtx = document.getElementById('current');
 
 function showWeather() {
     let cityName = cityNameInput.value;
@@ -14,11 +13,10 @@ function getWeatherForCity(cityName) {
 
     request.onload = function() {
         let data = JSON.parse(this.response);
+
+        //check if http status code == OK
         if(data.cod == 200) {
-            currentWeatherCtx.innerHTML = `${data.weather[0].main} (${data.weather[0].description}) <br>` ;
-            currentWeatherCtx.innerHTML += `temp: ${Math.round(toCelsius(data.main.temp))} &deg;C <br>`;
-            currentWeatherCtx.innerHTML += `pressure: ${data.main.pressure} hPa <br>`;
-            currentWeatherCtx.innerHTML += `humidity: ${data.main.humidity} %`;
+            displayData(data);
         } else {
             alert(data.message);
         }
@@ -29,4 +27,11 @@ function getWeatherForCity(cityName) {
 
 function toCelsius(kelvin) {
     return (kelvin - 273);
+}
+
+function displayData(data) {
+    document.getElementById('desc').innerHTML = `${data.weather[0].main} (${data.weather[0].description})`;
+    document.getElementById('pressure').innerHTML = `Pressure: ${data.main.pressure} hPa`;
+    document.getElementById('temp').innerHTML = `Temperature: ${Math.round(toCelsius(data.main.temp))} &deg;C`;
+    document.getElementById('humidity').innerHTML = `Humidity: ${data.main.humidity} %`;
 }

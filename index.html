@@ -6,15 +6,25 @@
     <head>
         <title>WeatherApp</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-
-        <label for="cityName">City: </label>
-        <input type="text" value="London" id="cityName">
-        <input type="button" value="Search" onclick="showWeather();">
+        <h1>WeatherApp</h1>
         
-        <div id="current"></div>
+        <div id="searchBar">
+            <label for="cityName">City: </label>
+            <input type="text" value="London" id="cityName">
+            <input type="button" value="Search" onclick="showWeather();">
+        </div>
+
+        <main>
+            <div id="desc"></div>
+            <div id="temp"></div>
+            <div id="pressure"></div>
+            <div id="humidity"></div>
+        </main>
 
         <script src="weather.js"></script>
     </body>
