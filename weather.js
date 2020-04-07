@@ -16,7 +16,9 @@ function getWeatherForCity(cityName) {
         let data = JSON.parse(this.response);
         if(data.cod == 200) {
             currentWeatherCtx.innerHTML = `${data.weather[0].main} (${data.weather[0].description}) <br>` ;
-            currentWeatherCtx.innerHTML += `temp: ${Math.round(toCelsius(data.main.temp))} &deg;C`;
+            currentWeatherCtx.innerHTML += `temp: ${Math.round(toCelsius(data.main.temp))} &deg;C <br>`;
+            currentWeatherCtx.innerHTML += `pressure: ${data.main.pressure} hPa <br>`;
+            currentWeatherCtx.innerHTML += `humidity: ${data.main.humidity} %`;
         } else {
             alert(data.message);
         }
