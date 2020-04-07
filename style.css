@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+#searchBar {
+    margin-bottom: 5vh;
+}
