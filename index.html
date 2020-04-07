@@ -16,14 +16,14 @@
         <div id="searchBar">
             <label for="cityName">City: </label>
             <input type="text" value="London" id="cityName">
-            <input type="button" value="Search" onclick="showWeather();">
+            <input type="button" value="Search" onclick="showWeather();" id="searchButton">
         </div>
 
         <main>
-            <div id="desc"></div>
-            <div id="temp"></div>
-            <div id="pressure"></div>
-            <div id="humidity"></div>
+            <div id="desc" class="info"></div>
+            <div id="temp" class="info"></div>
+            <div id="pressure" class="info"></div>
+            <div id="humidity" class="info"></div>
         </main>
 
         <script src="weather.js"></script>

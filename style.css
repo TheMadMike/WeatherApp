@@ -1,9 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body {
     margin: 0;
     width: 100vw;
+    height: 100vh;
     text-align: center;
+
+    background: 
+    linear-gradient(0deg, rgba(0,212,255,1) 0%,
+     rgba(9,9,121,1) 26%, rgba(18,79,148,1) 73%,
+      rgba(34,55,195,1) 90%, rgba(40,100,218,1) 96%) no-repeat;
+    background-size: auto;
+
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display:block;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+main {
+    font-size: 20pt;
+}
+
+.info {
+    margin-top: 10pt;
+}
+
+#cityName {
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 20pt;
+    background-color: #a6cfff;
+    border: none;
+}
+
+#searchButton {
+    border-radius: 20px;
+    font-size: 20pt;
+    background-color: #a6cfff;
+    padding: 10px;
+    border: none;
+}
+
+#searchButton:hover {
+    background-color: #889fba;
+    cursor: pointer;
 }
 
 #searchBar {
     margin-bottom: 5vh;
+    font-size: 24pt;
 }
