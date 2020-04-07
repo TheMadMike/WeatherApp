@@ -54,3 +54,33 @@ main {
     margin-bottom: 5vh;
     font-size: 24pt;
 }
+
+@media(max-width: 720px) {
+    h1 {
+        font-size: 24pt;
+    }
+
+    main {
+        font-size: 12pt;
+    }
+
+    #cityName {
+        font-size: 14pt;
+        padding: 4px;
+    }
+
+    #searchButton {
+        font-size: 14pt;
+        padding: 4px;
+    }
+
+    #searchBar {
+        font-size: 16pt;
+    }
+}
+
+@media(max-width: 400px) {
+    #searchButton {
+        margin-top: 2vh;
+    }
+}
