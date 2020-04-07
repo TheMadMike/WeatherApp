@@ -10,7 +10,7 @@ function getWeatherForCity(cityName) {
     let request = new XMLHttpRequest();
 
     const apiKey = '2460a70aa4ddf323987fb22827cc06e7';
-    request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid='+apiKey, )
+    request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&appid='+apiKey, )
 
     request.onload = function() {
         let data = JSON.parse(this.response);
