@@ -1,0 +1,33 @@
+{
+    "name" : "WeatherApp",
+    "short_name" : "WeatherApp",
+    "description" : "Check the current weather all around the world!",
+    "start_url" : "/",
+    "display" : "standalone",
+    "scope" : "/",
+    "theme_color" : "#70a7ff",
+    "bacgkround_color" : "#478fff",
+
+    "icons" : [
+        {
+            "src" : "img/icons/64.png",
+            "type" : "image/png",
+            "sizes" : "64x64"
+        },
+        {
+            "src" : "img/icons/128.png",
+            "type" : "image/png",
+            "sizes" : "128x128"
+        },
+        {
+            "src" : "img/icons/256.png",
+            "type" : "image/png",
+            "sizes" : "256x256"
+        },
+        {
+            "src" : "img/icons/512.png",
+            "type" : "image/png",
+            "sizes" : "512x512"
+        }
+    ]
+}
