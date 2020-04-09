@@ -2,7 +2,7 @@
     "name" : "WeatherApp",
     "short_name" : "WeatherApp",
     "description" : "Check the current weather all around the world!",
-    "start_url" : "/",
+    "start_url" : "/WeatherApp/",
     "display" : "standalone",
     "scope" : "/",
     "theme_color" : "#70a7ff",
