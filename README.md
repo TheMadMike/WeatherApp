@@ -1,3 +1,7 @@
+![Logo](https://raw.githubusercontent.com/TheMadMike/WeatherApp/master/img/icons/512.png)
+
+"Icon made by Freepik from www.flaticon.com"
+
 # WeatherApp
 
 The app lets you check the current weather all around the world. An educational project
