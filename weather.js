@@ -3,6 +3,8 @@ document.onload = askForGeolocation();
 const cityNameInput = document.getElementById('cityName');
 const apiKey = '2460a70aa4ddf323987fb22827cc06e7';
 
+document.getElementById("searchButton").onclick = showWeather;
+
 function showWeather() {
     let cityName = cityNameInput.value;
     getWeatherForCity(cityName);
